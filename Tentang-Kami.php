@@ -14,7 +14,7 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Jost:wght@500;600;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Jost:wght@500;600;700&display=swap" rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -45,44 +45,9 @@
 
         <!-- Navbar & Hero Start -->
         <div class="container-xxl position-relative p-0">
-            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
-                <a href="" class="navbar-brand p-0">
-                    <img src="img/logo-msk.png" alt="logo">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="fa fa-bars"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav mx-auto py-0">
-                        <a href="index.html" class="nav-item nav-link">Home</a>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Produk</a>
-                            <div class="dropdown-menu m-0">
-                                <a href="" class="dropdown-item">Sistem Informasi Pendapatan (SIP)</a>
-                                <a href="" class="dropdown-item">Sistem Informasi Pengelolaan Keuangan Daerah (SIPKD)</a>
-                                <a href="" class="dropdown-item">Sistem Informasi Aset (SIA)</a>
-                                <a href="" class="dropdown-item">Sistem Informasi Rumah Sakit (SIRUMKIT)</a>
-                                <a href="" class="dropdown-item">Sistem Informasi Arsip (SIARSIP)</a>
-                            </div>
-                        </div>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Layanan</a>
-                            <div class="dropdown-menu m-0">
-                                <a href="" class="dropdown-item">Konsultasi dan Pendampingan</a>
-                                <a href="" class="dropdown-item">Penyusunan Laporan</a>
-                                <a href="" class="dropdown-item">Penyusunan Sistem dan Prosedur</a>
-                                <a href="" class="dropdown-item">Pengembangan Aplikasi</a>
-                                <a href="" class="dropdown-item">Penyusunan Regulasi</a>
-                                <a href="" class="dropdown-item">Kajian dan Studi</a>
-                                <a href="" class="dropdown-item">Pelatihan dan Workshop</a>
-                                <a href="" class="dropdown-item">Product Support</a>
-                            </div>
-                        </div>
-                        <a href="about.html" class="nav-item nav-link active">Tentang Kami</a>
-                        <a href="contact.html" class="nav-item nav-link">Kontak</a>
-                    </div>
-                </div>
-            </nav>
+            <?php
+            include 'asset/navbar.php';
+            ?>
             <div class="container-xxl py-5 bg-primary hero-header">
                 <div class="container my-5 py-5 px-lg-5">
                     <div class="row g-5 py-5">
@@ -100,20 +65,24 @@
         <div class="container-xxl py-5">
             <div class="container py-5 px-lg-5">
                 <div class="row g-5 align-items-center">
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.1s">
                         <p class="section-title text-secondary">Tentang Kami<span></span></p>
                         <h1 class="mb-2">Meco Sinergi Konsultan</h1>
-                        <p class="mb-4">Meco Sinergi Konsultan hadir untuk meningkatkan kualitas tata kelola keuangan sektor publik, pemerintah daerah dan swasta agar lebih efektif dan efisien.</p>
-
-                        <p class="section-title text-success" data-wow-delay="0.5">Sejarah Singkat</p>
-
-                        <p class="mb-4">Tahun 2012 Didirikan PT. Meco Konsulindo Sinergi (Meco Sinergi Konsultan) yang bergerak dalam bidang usaha jasa konsultan dan pendampingan tata kelola keuangan pemerintah daerah.</p>
-
-                        <p class="mb-4">Tahun 2014 Untuk meningkatkan kualitas layanan kami, kami mendirikan pusat pelatihan yang dikhususkan untuk melatih dan mendidik klien kami terkait tata kelola keuangan pemerintah daerah. Pusat pelatihan ini dikelola oleh PT. Meco Konsultan Unggul, kami menambah cakupan jasa konsultan dan pendampingan pada bidang teknologi informasi dengan mendirikan perusahaan PT. Meco Teknokonsultan Sinergi.</p>
-
-                        <p class="mb-0">Tahun 2017 Oleh karena adanya kebutuhan dari pemerintah daerah dan sektor publik terkait aplikasi maka PT. Meco Teknokonsultan Sinergi menambahkan jasa pembuatan aplikasi, di tahun 2017 ini kami telah memulai pembuatan 4 aplikasi yang terdiri dari SIP(Sistem informasi Pendapatan) SIA(Sistem Informasi Aset), SIARSIP(Sistem Informasi Arsip), INOVAMEDIKA(Sistem Informasi Rumah Sakit Yang Terpadu).</p>
+                        <p class="mb-5">Meco Sinergi Konsultan hadir untuk meningkatkan kualitas tata kelola keuangan sektor publik, pemerintah daerah dan swasta agar lebih efektif dan efisien.</p>
+                        <div class="wow fadeInUp" data-wow-delay="0.3s">
+                            <p class="section-title text-success">Sejarah Singkat</p>
+                        </div>
+                        <div class="wow fadeInUp" data-wow-delay="0.5s">
+                            <p class="mb-4"><b>Tahun 2012</b> Didirikan PT. Meco Konsulindo Sinergi (Meco Sinergi Konsultan) yang bergerak dalam bidang usaha jasa konsultan dan pendampingan tata kelola keuangan pemerintah daerah.</p>
+                        </div>
+                        <div class="wow fadeInUp" data-wow-delay="0.7s">
+                            <p class="mb-4"><b>Tahun 2014</b> Untuk meningkatkan kualitas layanan kami, kami mendirikan pusat pelatihan yang dikhususkan untuk melatih dan mendidik klien kami terkait tata kelola keuangan pemerintah daerah. Pusat pelatihan ini dikelola oleh PT. Meco Konsultan Unggul, kami menambah cakupan jasa konsultan dan pendampingan pada bidang teknologi informasi dengan mendirikan perusahaan PT. Meco Teknokonsultan Sinergi.</p>
+                        </div>
+                        <div class="wow fadeInUp" data-wow-delay="0.9s">
+                            <p class="mb-0"><b>Tahun 2017</b> Oleh karena adanya kebutuhan dari pemerintah daerah dan sektor publik terkait aplikasi maka PT. Meco Teknokonsultan Sinergi menambahkan jasa pembuatan aplikasi, di tahun 2017 ini kami telah memulai pembuatan 4 aplikasi yang terdiri dari SIP(Sistem informasi Pendapatan) SIA(Sistem Informasi Aset), SIARSIP(Sistem Informasi Arsip), INOVAMEDIKA(Sistem Informasi Rumah Sakit Yang Terpadu).</p>
+                        </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-5">
                         <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="img/about.png">
                     </div>
                 </div>
@@ -150,7 +119,7 @@
             </div>
         </div>
         <!-- Facts End -->
-        
+
 
         <!-- Tim Start -->
         <div class="container-xxl py-5">
@@ -348,60 +317,12 @@
             </div>
         </div>
         <!-- Pekerjaan End -->
-        
+
 
         <!-- Footer Start -->
-        <div class="container-fluid bg-primary text-light footer wow fadeIn" data-wow-delay="0.1s">
-            <div class="container py-5 px-lg-5">
-                <div class="row g-5">
-                    <div class="col-md-6 col-lg-6">
-                        <p class="section-title text-white h5 mb-4">Alamat<span></span></p>
-                        <p><i class="fa fa-map-marker-alt me-3"></i>Griya Cilegon Blok K1 No. 7 Serang, Banten</p>
-                        <p><i class="fa fa-phone-alt me-3"></i>0811482114</p>
-                        <p><i class="fa fa-envelope me-3"></i>info@mecosinergikonsultan.com</p>
-                        <div class="d-flex pt-2">
-                            <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/mecosinergikonsultan" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/mecosinergikonsultan" target="_blank"><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-outline-light btn-social" href="https://www.linkedin.com/company/mecosinergikonsultan" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                            <a class="btn btn-outline-light btn-social" href="https://www.youtube.com/@mecosinergikonsultan" target="_blank"><i class="fab fa-youtube"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <p class="section-title text-white h5 mb-4">Galeri<span></span></p>
-                        <div class="row g-2">
-                            <div class="col-4">
-                                <img class="img-fluid" src="img/portfolio-1.jpg" alt="Image">
-                            </div>
-                            <div class="col-4">
-                                <img class="img-fluid" src="img/portfolio-2.jpg" alt="Image">
-                            </div>
-                            <div class="col-4">
-                                <img class="img-fluid" src="img/portfolio-3.jpg" alt="Image">
-                            </div>
-                            <div class="col-4">
-                                <img class="img-fluid" src="img/portfolio-4.jpg" alt="Image">
-                            </div>
-                            <div class="col-4">
-                                <img class="img-fluid" src="img/portfolio-5.jpg" alt="Image">
-                            </div>
-                            <div class="col-4">
-                                <img class="img-fluid" src="img/portfolio-6.jpg" alt="Image">
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-            <div class="container px-lg-5">
-                <div class="copyright">
-                    <div class="row">
-                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            Copyright &copy; Meco Sinergi Konsultan 2024
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <?php
+        include 'asset/footer.php';
+        ?>
         <!-- Footer End -->
 
 

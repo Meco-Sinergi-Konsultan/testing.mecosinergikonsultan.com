@@ -14,7 +14,7 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Jost:wght@500;600;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Jost:wght@500;600;700&display=swap" rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -45,45 +45,9 @@
 
         <!-- Navbar & Hero Start -->
         <div class="container-xxl position-relative p-0">
-            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
-                <a href="" class="navbar-brand p-0">
-                    <img src="img/logo-msk.png" alt="logo">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="fa fa-bars"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav mx-auto py-0">
-                        <a href="index.html" class="nav-item nav-link active">Home</a>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Produk</a>
-                            <div class="dropdown-menu m-0">
-                                <a href="" class="dropdown-item">Sistem Informasi Pendapatan (SIP)</a>
-                                <a href="" class="dropdown-item">Sistem Informasi Pengelolaan Keuangan Daerah (SIPKD)</a>
-                                <a href="" class="dropdown-item">Sistem Informasi Aset (SIA)</a>
-                                <a href="" class="dropdown-item">Sistem Informasi Rumah Sakit (SIRUMKIT)</a>
-                                <a href="" class="dropdown-item">Sistem Informasi Arsip (SIARSIP)</a>
-                            </div>
-                        </div>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Layanan</a>
-                            <div class="dropdown-menu m-0">
-                                <a href="" class="dropdown-item">Konsultasi dan Pendampingan</a>
-                                <a href="" class="dropdown-item">Penyusunan Laporan</a>
-                                <a href="" class="dropdown-item">Penyusunan Sistem dan Prosedur</a>
-                                <a href="" class="dropdown-item">Pengembangan Aplikasi</a>
-                                <a href="" class="dropdown-item">Penyusunan Regulasi</a>
-                                <a href="" class="dropdown-item">Kajian dan Studi</a>
-                                <a href="" class="dropdown-item">Pelatihan dan Workshop</a>
-                                <a href="" class="dropdown-item">Product Support</a>
-                            </div>
-                        </div>
-                        <a href="about.html" class="nav-item nav-link">Tentang Kami</a>
-                        <a href="contact.html" class="nav-item nav-link">Kontak</a>
-                    </div>
-                </div>
-            </nav>
-
+            <?php
+            include 'asset/navbar.php';
+            ?>
             <div class="container-xxl bg-primary hero-header">
                 <div class="container px-lg-5">
                     <div class="row g-5 align-items-end">
@@ -98,6 +62,7 @@
             </div>
         </div>
         <!-- Navbar & Hero End -->
+
 
         <!-- About Start -->
         <div class="container-xxl py-5">
@@ -118,7 +83,7 @@
         <!-- About End -->
 
 
-        <!-- Facts Start -->
+        <!-- Fakta Start -->
         <div class="container-xxl bg-primary fact py-5 wow fadeInUp" data-wow-delay="0.1s">
             <div class="container py-5 px-lg-5">
                 <div class="row g-4">
@@ -145,7 +110,7 @@
                 </div>
             </div>
         </div>
-        <!-- Facts End -->
+        <!-- Fakta End -->
 
 
         <!-- Layanan Start -->
@@ -163,7 +128,7 @@
                             </div>
                             <h5 class="mb-3">Konsultasi dan Pendampingan</h5>
                             <p class="m-0">Kegiatan konsultasi dan pendampingan oleh tenaga ahli dan senior konsultan.</p>
-                            <a class="btn btn-square" href=""><i class="fa fa-arrow-right"></i></a>
+                            <a class="btn btn-square" href="Konsultasi-dan-Pendampingan"><i class="fa fa-arrow-right"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
@@ -173,7 +138,7 @@
                             </div>
                             <h5 class="mb-3">Penyusunan Laporan</h5>
                             <p class="m-0">Solusi berupa jasa penyusunan Laporan keuangan dan laporan lain oleh ahlinya.</p>
-                            <a class="btn btn-square" href=""><i class="fa fa-arrow-right"></i></a>
+                            <a class="btn btn-square" href="Penyusunan-Laporan"><i class="fa fa-arrow-right"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
@@ -182,8 +147,8 @@
                                 <i class="fa fa-sitemap fa-2x"></i>
                             </div>
                             <h5 class="mb-3">Penyusunan Sistem dan Prosedur</h6>
-                            <p class="m-0">Membantu merumuskan sistem dan prosedur secara manual/komputerisasi.</p>
-                            <a class="btn btn-square" href=""><i class="fa fa-arrow-right"></i></a>
+                                <p class="m-0">Membantu merumuskan sistem dan prosedur secara manual/komputerisasi.</p>
+                                <a class="btn btn-square" href="Penyusunan-Sistem-dan-Prosedur"><i class="fa fa-arrow-right"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -193,7 +158,7 @@
                             </div>
                             <h5 class="mb-3">Pengembangan Aplikasi</h5>
                             <p class="m-0">Menyediakan Software/Aplikasi yang dikembangkan khusus sesuai kebutuhan.</p>
-                            <a class="btn btn-square" href=""><i class="fa fa-arrow-right"></i></a>
+                            <a class="btn btn-square" href="Pengembangan-Aplikasi"><i class="fa fa-arrow-right"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
@@ -203,7 +168,7 @@
                             </div>
                             <h5 class="mb-3">Penyusunan Regulasi</h5>
                             <p class="m-0">Pendampingan dalam proses penyusunan regulasi sampai pengesahan.</p>
-                            <a class="btn btn-square" href=""><i class="fa fa-arrow-right"></i></a>
+                            <a class="btn btn-square" href="Penyusunan-Regulasi"><i class="fa fa-arrow-right"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
@@ -213,7 +178,7 @@
                             </div>
                             <h5 class="mb-3">Kajian dan Studi</h5>
                             <p class="mb-4">Mendapatkan informasi akurat dari data collection, analisis dan penelitian.</p>
-                            <a class="btn btn-square" href=""><i class="fa fa-arrow-right"></i></a>
+                            <a class="btn btn-square" href="Kajian-dan-Studi"><i class="fa fa-arrow-right"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -223,7 +188,7 @@
                             </div>
                             <h5 class="mb-3">Pelatihan dan Workshop</h5>
                             <p class="mb-0">Pelatihan terkait perencanaan, penganggaran, pelaksanaan dan penatausahaan keuangan dan pelaporan.</p>
-                            <a class="btn btn-square" href=""><i class="fa fa-arrow-right"></i></a>
+                            <a class="btn btn-square" href="Pelatihan-dan-Workshop"><i class="fa fa-arrow-right"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
@@ -233,7 +198,7 @@
                             </div>
                             <h5 class="mb-3">Product Support</h5>
                             <p class="mb-4">Pengadaan peralatan pendukung terkait penggunaan teknologi informasi dan komunikasi.</p>
-                            <a class="btn btn-square" href=""><i class="fa fa-arrow-right"></i></a>
+                            <a class="btn btn-square" href="Product-Support"><i class="fa fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -261,7 +226,7 @@
                 <p class="section-title text-secondary justify-content-center"><span></span>Kesaksian<span></span></p>
                 <h1 class="text-center mb-5">Apa Kata Klien Kami!</h1>
                 <h2 class="text-center text-secondary mb-5">Coming Soon</h1>
-                <!-- <div class="owl-carousel testimonial-carousel">
+                    <!-- <div class="owl-carousel testimonial-carousel">
                     <div class="testimonial-item bg-light rounded my-4">
                         <p class="fs-5"><i class="fa fa-quote-left fa-4x text-primary mt-n4 me-3"></i>Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit sed stet lorem sit clita duo justo.</p>
                         <div class="d-flex align-items-center">
@@ -351,62 +316,13 @@
             </div>
         </div>
         <!-- Tim End -->
-        
 
         <!-- Footer Start -->
-        <div class="container-fluid bg-primary text-light footer wow fadeIn" data-wow-delay="0.1s">
-            <div class="container py-5 px-lg-5">
-                <div class="row g-5">
-                    <div class="col-md-6 col-lg-6">
-                        <p class="section-title text-white h5 mb-4">Alamat<span></span></p>
-                        <p><i class="fa fa-map-marker-alt me-3"></i>Griya Cilegon Blok K1 No. 7 Serang, Banten</p>
-                        <p><i class="fa fa-phone-alt me-3"></i>0811482114</p>
-                        <p><i class="fa fa-envelope me-3"></i>info@mecosinergikonsultan.com</p>
-                        <div class="d-flex pt-2">
-                            <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/mecosinergikonsultan" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/mecosinergikonsultan" target="_blank"><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-outline-light btn-social" href="https://www.linkedin.com/company/mecosinergikonsultan" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                            <a class="btn btn-outline-light btn-social" href="https://www.youtube.com/@mecosinergikonsultan" target="_blank"><i class="fab fa-youtube"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <p class="section-title text-white h5 mb-4">Galeri<span></span></p>
-                        <div class="row g-2">
-                            <div class="col-4">
-                                <img class="img-fluid" src="img/portfolio-1.jpg" alt="Image">
-                            </div>
-                            <div class="col-4">
-                                <img class="img-fluid" src="img/portfolio-2.jpg" alt="Image">
-                            </div>
-                            <div class="col-4">
-                                <img class="img-fluid" src="img/portfolio-3.jpg" alt="Image">
-                            </div>
-                            <div class="col-4">
-                                <img class="img-fluid" src="img/portfolio-4.jpg" alt="Image">
-                            </div>
-                            <div class="col-4">
-                                <img class="img-fluid" src="img/portfolio-5.jpg" alt="Image">
-                            </div>
-                            <div class="col-4">
-                                <img class="img-fluid" src="img/portfolio-6.jpg" alt="Image">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container px-lg-5">
-                <div class="copyright">
-                    <div class="row">
-                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            Copyright &copy; Meco Sinergi Konsultan 2024
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <?php
+        include 'asset/footer.php';
+        ?>
         <!-- Footer End -->
 
-        
         <!-- Back to Top -->
         <a href="#" class="btn btn-lg btn-secondary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
     </div>
